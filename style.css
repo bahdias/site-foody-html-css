@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+*{
+    margin: 0; /* Sem margem externa */
+    padding: 0;/* Sem margem interna */
+    list-style: none; /* Retirando os pontos de todos os elementos de listagem */
+    text-decoration: none; /* Retirando os sublinados de todos os elementos de listagem  */
+}
+
+:root { /* Definindo variáveis para as fontes */
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Muli", serif;
+}
+
+header { /* Formatar a Header */
+    width: 100%; /* Largura de 100% da Tela */
+    height: 20vh; /* Altura de 100% da pagina de visualização (Depende do tamanho da janela) */
+    overflow: hidden; /* Tira o scroll inferior (barra de rolagem horizontal) */
+    position: relative; /* Colocando posicionamento relativo no header para o banner ter posicionamento absoluto */
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+h1{
+    margin: 2.4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+}
+
+h1:hover{
+    color: rgb(65, 127, 85);
+}
+
+nav{
+    display: flex;
+    margin: 1rem auto;
+}
+
+li{
+    top: 1rem;
+    float: right;
+    padding: 30px;
+    align-items:center; 
+}
+
+a{
+    cursor: pointer;
+}
+
+.account{
+    background: rgb(240, 240, 240);
+    padding:5px 30px;
+    border-radius: 20px;
+    cursor: pointer; 
+    float: right;
+    right: 8rem;
+    top: 2.6rem;
+    position: absolute;
+    align-items:center; 
+    
+}
+.account:hover{
+    background: rgb(65, 127, 85);
+    color:rgb(240, 240, 240);
+}
+
+.principal{
+    background: rgb(240, 254, 243);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    padding: 50px 10px 80px 50px;
+}
+
+.titulo{
+    margin-left :50px;
+    margin-right: 50px;
+    font-size: 50px;
+    font-family: var(--font-primary);
+    text-align: left;
+    width: 30%;
+}
+
+.texto{
+    margin-top: 1rem;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-align: left;
+}
+
+img{
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+
+.menu{
+    background: black;
+    padding:5px 30px;
+    color:rgb(240, 240, 240);
+    border-radius:20px;
+    margin-left: 90px;
+}
+
+.menu:hover{
+    background: rgb(65, 127, 85);
+    color:rgb(240, 240, 240);
+}
+
+footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 7rem;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content:center;
+}
+
+.direito{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 15px;
+    color: rgb(65, 127, 85);
+    text-align: center;
+}
+
+.foody{
+    bottom: 3.6rem;
+    position: absolute;
+    color: rgb(65, 127, 85);
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+}
+
+.social-list { /* Formatando os links do menu */
+    position: absolute; /* Posição absoluta */
+    bottom: 0.8rem; /* Distanciamento da parte de baixo */
+    width: 100%; /* Largura */
+    display: flex; /* Distribuição dos icones */
+    justify-content: space-evenly; /* Mais uniforme a distribuição */
+}
+
+.social-list ul li a i { /* Formatando os links do menu que tiver o "i" */
+    background: rgb(65, 127, 85); /* Mudando a cor de fundo */
+    color: rgba(255, 255, 255, 1); /* Mudando a cor do icone */
+    height: 1.5rem; /* Altura */
+    width: 1.5rem; /* Largura */
+    font-size: 1rem; /* Tamanho da fonte */
+    display: flex; /* Distribuição dos icones */
+    justify-content: center; /* Mais uniforme a distribuição */
+    align-items: center; /* Alinha no centro */
+    border-radius: 50%; /* Largura */
+    transition: background-color 0.4s; /* Transição */
+}
+  
+.social-list i:hover { /* Mudança das cores quando coloca o mouse em cima */
+    background-color: black; /* Clareia o icone */
+}
